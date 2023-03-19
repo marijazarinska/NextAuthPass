@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@300&family=Satisfy&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('1.jpg'); */
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner a{
+  text-decoration: none;
+  color: #808080;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+::-webkit-input-placeholder {
+    color: #d9d9d9;
+}
+
+.info {
+  margin-left: 1050px;
+  margin-top: 30px;
+}
+.main_page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 12px 0;
+    border-radius: 5px;
+    border: 3px solid rgba(4, 45, 83, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px dodgerblue;
+    padding: 5px;
+}
+
+.but {
+    margin: 6px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    width: 30%;
+    border: 3px solid rgba(4, 45, 83, 0.699);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px dodgerblue;
+}
+
+.rad {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.ch {
+    height: 20px;
+    width: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 8px;
+    margin: 3px;
+    border: 1px solid black;
+}
+
+
+button {
+    margin-top: 3px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    transform: scale(1.25);
+    border-radius: 25px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    background-color: #aaaaaa9c;
+    border: 0px solid black;
+    font-weight: bold;
+}
+
+button:active {
+    content: "";
+    position: relative;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0s;
+    background-color: black;
+}
+
+#email,
+#password {
+    font-size: 17px;
+    box-sizing: border-box;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    border: 2px solid rgba(4, 45, 83, 0.699);
+    border-radius: 4px;
+    background: white;
+    outline: none;
+    width: 300px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-left: 830px;
+margin-top: 20px;
+}
+
+.con {
+    width: 150px;
+    height: 40px;
+    margin: 10px 30px;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00a2ff9c 0%, #00bdec9c 50%, #00abc99c 99%);
+}
+@media screen and (max-width:600px) {
+  .navbar  a {
+    font-size: 18px;
+  }
+  .main_page label {
+    font-size: 12px;
+  }
+  .signin-form {
+      display: flex;
+      flex-direction: column;
+      padding: 5px 10px;
+      width: 80%;
+      border: 1px solid rgba(4, 45, 83, 0.699);
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px 1px dodgerblue;
+  }
+  .rad h3 {
+    font-size: 12px;
+    margin-left: 150px;
+    margin-top: -140px;
+  }
+  .ch {
+    margin-left: 150px;
+  }
+  #email,
+  #password {
+      font-size: 12px;
+      box-sizing: border-box;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: left;
+      border: 1px solid rgba(4, 45, 83, 0.699);
+      border-radius: 4px;
+      background: white;
+      outline: none;
+      width: 100px;
+      margin-top: 3px;
+  }
+
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="final1.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>Sign In </title>
+</head>
+<body>
+  <div class="banner">  
+    <div class="navbar">
+      <h1 style="color: #808080;"><a href="home.html">ᴅᴇᴄᴏʀʜᴏᴍᴇ</a></h1>
+    </div>
+    <div class="main_page" style="color: #808080;">
+        <form class="signin-form" autocomplete="off">
+            <label for="email"><b>Username*</b></label>
+            <input type="email" id="email" placeholder="Enter your email" required="required" autocomplete="off"
+                style="margin-bottom: 10px;"></br>
+            <label for="password" ><b>Password</b></label>
+            <input id="password" autocomplete="off" placeholder="Select Images for password" readonly="readonly"
+                type="password" /></br>
+            <div class="rad">
+                <h3>Please select a category for password formation:</h3>
+                <label><input type="radio" name="option" value="sportperson" class="ch" checked="checked"
+                        onclick="random()">Sports Person</label>
+                <label><input type="radio" name="option" value="actor" class="ch" onclick="random()">Actor &
+                    Actress</label>
+                <label><input type="radio" name="option" value="car" class="ch" onclick="random()">Car Logos</label>
+                <label><input type="radio" name="option" value="cartoon" class="ch" onclick="random()">Cartoons</label>
+                <label><input type="radio" name="option" value="chocolate" class="ch"
+                        onclick="random()">Chocolates</label>
+            </div>
+        </form>
+        <div class="grid">
+            <div class="grid1" style="display:none;">
+                <div id="a0" class="but"></div>
+                <div id="a1" class="but"></div>
+                <div id="a2" class="but"></div>
+            </div>
+            <div class="grid2" style="display:none;">
+                <div id="a3" class="but"></div>
+                <div id="a4" class="but"></div>
+                <div id="a5" class="but"></div>
+            </div>
+            <div class="grid3" style="display:none;">
+                <div id="a6" class="but"></div>
+                <div id="a7" class="but"></div>
+                <div id="a8" class="but"></div>
+            </div>
+        </div>
+    </div>
+        <a href="register.html" class="info">
+            Don't have account? Sign Up.
+        </a>
+        <br>
+        <a href="home.html" class="info">
+            Return to Home.
+        </a>
+    </center>
+    <div class="controls">
+        <button onclick="reset()" class="con">Reset</button>
+        <button id="SignIN" onclick="signIn()" class="con">Sign In</button>
+    </div>
+
+  <!-- za prikazuvanje na slikite koga ke se klikne na passwordd   -->
+    <script>
+    document.getElementById("password").addEventListener("click", function() {
+      document.querySelector(".grid1").style.display = "block";
+      document.querySelector(".grid2").style.display = "block";
+      document.querySelector(".grid3").style.display = "block";
+    });
+  </script>
+
+</body>
+
+
+</html>
